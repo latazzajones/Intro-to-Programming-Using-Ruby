@@ -1,8 +1,8 @@
 # Intro to Programming Course Outline
-*We'll be using Chris Pines Book. Learn to Program https://pine.fm/LearnToProgram*
+*We'll be using Chris Pine's Book. Learn to Program https://pine.fm/LearnToProgram*
 
 ## Class 1
-Intro to Programming
+###Intro to Programming
 	* You probably wont break anything
 	* command line and install
 	* creating an rb file and running script
