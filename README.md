@@ -3,12 +3,13 @@
 
 ## Class 1
 ###Intro to Programming
-	*You probably wont break anything
-	*command line and install
-	*creating an rb file and running script
-	*chapter 2! numbers
-	*Homework
-	 *Create a Git Hub account
+
+	* You probably wont break anything
+	* command line and install
+	* creating an rb file and running script
+	* chapter 2! numbers
+	* Homework
+	 * Create a Git Hub account
 	 * Practice what we learned about the command line
 	 * To do all of the following from there:
 	 * Create your own folder called "..." and run that file from the command line
