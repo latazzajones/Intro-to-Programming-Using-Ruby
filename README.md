@@ -5,12 +5,13 @@
 ###Intro to Programming
 * You probably wont break anything
 * command line and install
-* chapter 2! numbers
+* chapter 1! numbers
+* chapter 2! letters
 * Homework
  * Practice what we learned about the command line
  * To do all of the following from there:
  * Teach yourself mkdir - create your own folder called "..."
- * Do 1.5 questions in Chris Pine's book
+ * Do 1.5 questions in Chris Pine's book <- this needs to be more to include letters.
 * Come hang with us on Saturday. We meet at the Bun Shop from 10-12.
 
 ## Class 2
