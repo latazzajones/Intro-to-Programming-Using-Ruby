@@ -3,7 +3,6 @@
 
 ## Class 1
 ###Intro to Programming
-
 * You probably wont break anything
 * command line and install
 * creating an rb file and running script
@@ -23,6 +22,30 @@
 * More review of the command line.
 * Homework
 	* **V+T need to create an assignment here!**
+
+## Class 3
+* More review of the command line
+* Explain git
+* Methods
+* 10-15 min work time. To do the problems in 5.6!! YAY you're programming!
+* run the program as you're building it to test.
+* Set up github account and push. Check out some rad repos that already exist ...
+	* **add examples**
+	* odin?
+	* our pages?
+* Skip toc exercise.
+* Git!
+* Homework
+	* Angry boss - HAVE FUN WITH IT!
+	* make 3 commits
+	* try and push them to github
+
+##Class 4
+* Chapters 7 and 8 including arrays and iterators!
+* Resources - what's next -
+* hack nights
+* ruby monk
+* Keep reading this book (warning .. but come on Satruday or to hack night)
 
 # Getting this tutorial up and running.
 
