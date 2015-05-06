@@ -99,7 +99,7 @@
 					<h4>Chris Pine's <i>Learn To Program</i></h4>
 					<img width="auto" height="350" src="https://pine.fm/images/LTP2_cover.jpg">
 					<p>
-						<a href="https://pine.fm/LearnToProgram" target="blank">https://pine.fm/LearnToProgram</a>
+						<a href="http://kysmykseka.net/koti/wizardry/Programming/Pragmatic%20Programmers/Learn%20to%20Program%202nd%20Edition.pdf" target="blank">Learn to Program PDF</a>
 					</p>
 				</section>
 
@@ -237,16 +237,131 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Strings vs. Numbers
+						- *Numbers*: integer or a float
+						- *Strings*: characters, words, sentences. Basically, anything can be a string if it's within `"` or `'` quotes
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Different data types do not play well together
+						- this will break
+						```
+						'dog' + 5
+						```
+						- this will **not** break
+						```
+						'dog' + '5'
+						```
+						- and neither will this
+						```
+						'dog' + 5.to_s
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## `to_s`
+						### is a method.
+						### Don't worry about it.
+
+						## But it does **DO** something.
+
+						#### What do you think it does?
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Let's write our program:
+						- Open your `calc.rb` file and type:
+						```
+						puts "cat" + 2
+						puts "3"
+						puts 1.0 + 2.0 + "addition!"
+						puts "you" + "are" + "programming!"
+						puts "programming" * 3
+						puts "9.0 / 2.0"
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Run Our Program!
+						```
+						ruby calc.rb
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Did you get this ...?
+						```
+						[11:54:32] Desktop
+						♥ ruby calc.rb
+						cat 2
+						3
+						3 addition!
+						you are programming!
+						programming
+						programming
+						programming
+						9.0 / 2.0
+						```
+						but maybe you got something more like this?
+						```
+						#<TypeError: no implicit conversion of Fixnum into String>
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Your first bug. Welcome to code.
+						
+						- Figure out why this error might happen:
+
+						```
+						<TypeError: no implicit conversion of Fixnum into String>
+						```
+						- Fix it in your code -- there's more than one way!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Review
 						- Set up + install.
 						- Introduced the command line.
 						- Created + ran our first program.
 						- Learned about numbers + operations.
-
+						- Learned about strings.
+						- And data types.
+						- AND a method!
 					</script>
 				</section>
 
 				<!-- homework slide! -->
+
+				<section data-markdown>
+					<script type="text/template">
+						## Homework
+						1. Teach yourself about the `mkdir` command:
+							- Create your own folder on your desktop called `Development`
+							- Create a file in that folder called `numbers_and_letters.rb`
+							- Do the rest of your homework in that file!
+						2. Do Section 2.5 in Learn to Program (pdf)
+						3. Use some strings to elaborate on your program and create more complete answers from 2.5:
+							```
+							"There are " + 24.to_s + " hours in a day."
+							```
+					</script>
+				</section>
 
 <!-- DAY 2 -->
 				<section>
