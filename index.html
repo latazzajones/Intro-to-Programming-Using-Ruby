@@ -323,7 +323,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Your first bug. Welcome to code.
-						
+
 						- Figure out why this error might happen:
 
 						```
@@ -352,7 +352,7 @@
 					<script type="text/template">
 						## Homework
 						1. Teach yourself about the `mkdir` command:
-							- Create your own folder on your desktop called `Development`
+							- Try to create your own folder on your desktop called `Development`(if this is challenging - do it from your GUI)
 							- Create a file in that folder called `numbers_and_letters.rb`
 							- Do the rest of your homework in that file!
 						2. Do Section 2.5 in Learn to Program (pdf)
@@ -364,6 +364,13 @@
 				</section>
 
 <!-- DAY 2 -->
+
+			<section data-markdown>
+				<script type="text/template">
+					Day 2
+				</script>
+			</section>
+
 				<section data-markdown>
 					<script type="text/template">
 						## Homework Review!
@@ -373,7 +380,11 @@
 				<section data-markdown>
 					<script type="text/template">
 						## More command line commands
-						### how did everyone do with `mkdir`?
+						- `mkdir`
+						- `touch`
+						- `rm`
+						- `rm -rf`
+						- `grep pattern filename(s)`
 					</script>
 				</section>
 
@@ -450,25 +461,91 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						slide that covers solution
+						##The only solution I could come up with.
+
+						```
+						susie = "I saw Susie sitting in a shoe shine shop. Where she sits she shines,
+						and where she shines she sits." + " "
+
+						susie * 20
+						```
+						```
+						susie = "I saw Susie sitting in a shoe shine shop. Where she sits she shines,
+						and where she shines she sits. "
+
+						susie * 20
+						```
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						fundamentals of methods - receivers and givers?
+						### Methods
+						#### How we send actions
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						slide that introduces methods, just a few
+						### Everything in Ruby is an object.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						show github as a social network
+						<img src="assets/objectmethod.png">
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##What methods have we learned?
+
+						###`+ = - / *`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Some *really* useful methods
+						```
+						puts (implicit reciever for self)
+						gets
+						gets.chomp
+						rand
+						.to_s
+						.to_i
+						.leangth
+						.reverse
+						.upcase
+						.downcase
+						.capitalize
+						.swapcase
+						```
+						</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Lets write a program. Create a new file and add this to it.
+						```
+						puts Tell me your name!
+						gets
+						```
+						</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Cool - now run your program.
+						</script>
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+						##Now for some social networking/version control.
+						<a href="https://github.com/">GitHub</a>
 					</script>
 				</section>
 
@@ -484,6 +561,58 @@
 
 				<section>
 					<h2>Day 3</h2>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						Review the Homework!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						Review the command line.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						git init!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						What is git?
+
+						* version control
+						* a history of your work stored locally with your project in a hidden file called `.git`
+							* aside - files that start with a `.` are hidden files.
+						* let's walk thorugh commiting `Development` to a git file.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						```
+						git init
+						git status
+						git add --all
+						git commit -m "first commit! yay!"
+						```
+
+						Now - lest do
+						```
+						git log
+						```
+						<!-- did we install git in Day 1? -->
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						create more programs and commit them locally. 
+					</script>
 				</section>
 
 <!-- DAY 4 -->
