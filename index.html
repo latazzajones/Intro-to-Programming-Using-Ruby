@@ -247,6 +247,13 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Escaping characters in strings
+						`puts 'Hello, what\'s your name?'`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Different data types do not play well together
 						- this will break
 						```
@@ -637,12 +644,32 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Comparisons
+						#### comparing one object to another
 						 - `<`
 						 - `>`
 						 - `>=`
 						 - `<=`
 						 - `==`
-						 - `!=`
+						 - `!=` (not equals to)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Nothingness
+						#### Everything in Ruby is an object.
+						#### Objects are inherently "truthy" values, because they exist.
+						#### ...but what about the *absence* of an object?
+						## `nil`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## `nil` is nothing
+						- Evaluates to neither `true` nor `false`
+						- Nil is *not* a truthy value -- it's falsey (it doesn't exist)
+						- The **only** other falsey value in Ruby is `false`.
 					</script>
 				</section>
 
@@ -659,17 +686,34 @@
 						 # => true
 						 > 1 == '1'
 						 # => false
-
 						 ```
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## What about `true` and `false`?
+						### What are they?
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## `true` and `false`
+						 are objects & data structures!
+
+						 We call them  `booleans`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Conditionals
+						#### logical statements based on how comparisons evaluate 
 						 - `if`
 						 - `else`
 						 - `elsif`
+						 - `end`
 						 - `&&`
 						 - `||`
 					</script>
@@ -677,7 +721,44 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						create more programs and make 3 local commits.
+						### Combining conditionals and comparisons:
+						```
+						if "dog".length > 4
+							"Woof woof!"
+						else
+							"dawg"
+						end
+						```
+						##### *(uses implicit returns)*
+						```
+						puts 'Hello, what\'s your name?'
+						name = gets.chomp
+
+						puts 'Hello, ' + name + '.'
+						
+						if name == 'Chris'
+							'What a lovely name!'
+						elsif name == 'Katy'
+							'That\'s a nice name!'
+						end
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Work time!
+						### Start `Deaf Grandma` and `99 Bottles of Beer` in Chris Pine 7.5
+						#### Save them as separate files and commit your work frequently!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Homework
+						- Finish both exercises
+						- Use version control and **commit, commit, commit**!
+						- Check out Ruby Monk over <a href="http://rubymonk.com">here</a>.
 					</script>
 				</section>
 
