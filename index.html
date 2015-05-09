@@ -126,6 +126,7 @@
 					<p>How we communicate with our computer</p>
 					<p>Where we run scripts</p>
 					<p>Where we look cool</p>
+					<p>Have you installed xCode? Make sure you do that today.</p>
 				</section>
 
 				<section>
@@ -434,18 +435,18 @@
 					<script type="text/template">
 						## How do you define a variable?
 						```
-						vaidehi = "Vaidehi"
-						t = "Tasha"
-						x = 3
-						y = 5
+						> vaidehi = "Vaidehi"
+						> t = "Tasha"
+						> x = 3
+						> y = 5
 						```
 						what can you do with variables?
 						```
-						t
+						> t
 						# => "Tasha"
-						x + y
+						> x + y
 						# => 8
-						vaidehi + " & " + t
+						> vaidehi + " & " + t
 						# => "Vaidehi & Tasha"
 						```
 					</script>
@@ -480,8 +481,8 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						### Methods
-						#### How we send actions
+						## Methods
+						### How we send actions
 					</script>
 				</section>
 
@@ -515,7 +516,7 @@
 						rand
 						.to_s
 						.to_i
-						.leangth
+						.length
 						.reverse
 						.upcase
 						.downcase
@@ -529,8 +530,9 @@
 					<script type="text/template">
 						##Lets write a program. Create a new file and add this to it.
 						```
-						puts Tell me your name!
-						gets
+						puts "Tell me your name!"
+						name = gets
+						name
 						```
 						</script>
 				</section>
@@ -551,9 +553,9 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						homework slide:
-						- create gihub account
-						- exercise 5.6 on page 28
+						## Homework:
+						- Create GitHub account
+						- Exercise 5.6 on page 28 (you'll need to use variables + methods!)
 					</script>
 				</section>
 
@@ -565,59 +567,131 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						Review the Homework!
+						## Review the Homework!
+						 - How did you write the `full name greeting` program?
+						 - There's more than one way to do something!
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						Review the command line.
+						## Time to git our git on
+						- Version control
+						- Locally-hidden files prepended with `.git`
+						- Do you have git? (`git --version`)
+							* Install from <a href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a>.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						git init!
+						## Using git locally
+						- `git init`
+						- `git status`
+						- `git add --all`
+						- `git commit -m`
+						- `git branch`
+						- `git log`
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						What is git?
-
-						* version control
-						* a history of your work stored locally with your project in a hidden file called `.git`
-							* aside - files that start with a `.` are hidden files.
-						* let's walk thorugh commiting `Development` to a git file.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
+						## Making our first commit
 						```
 						git init
 						git status
 						git add --all
 						git commit -m "first commit! yay!"
 						```
-
-						Now - lest do
+						###Let's check our log:
 						```
 						git log
 						```
-						<!-- did we install git in Day 1? -->
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						create more programs and commit them locally. 
+						##Time to work on `Angry Boss`!! 
+						###(Chris Pine 6.2)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Let's commit `Angry Boss` !
+						#### ...do you remember how?
+						<!-- link back to the slide that explains how -->
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Flow control
+						 - How we handle logic in our code.
+						 - **Comparisons** & **conditionals** (aka "branching")
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Comparisons
+						 - `<`
+						 - `>`
+						 - `>=`
+						 - `<=`
+						 - `==`
+						 - `!=`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Comparisons
+						### let's play in irb:
+						 ```
+						 > 1 > 2
+						 # => false
+						 > 1 < 2
+						 # => true
+						 > 'dog' == 'dog'
+						 # => true
+						 > 1 == '1'
+						 # => false
+
+						 ```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Conditionals
+						 - `if`
+						 - `else`
+						 - `elsif`
+						 - `&&`
+						 - `||`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						create more programs and make 3 local commits.
 					</script>
 				</section>
 
 <!-- DAY 4 -->
 				<section>
 					<h2>Day 4</h2>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Homework Review
+						- Time to push what we committed last week!
+						- We'll set up a new repository together!
+					</script>
 				</section>
 
 <!-- REFERENCE SLIDES -->
