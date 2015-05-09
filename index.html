@@ -721,7 +721,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						### Combining conditionals and comparisons:
+						### Combining conditionals and comparisons (example 1):
 						```
 						if "dog".length > 4
 							"Woof woof!"
@@ -730,6 +730,35 @@
 						end
 						```
 						##### *(uses implicit returns)*
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Combining conditionals and comparisons (example 2):
+						#### ||
+						```
+						cat = 'purrr'
+
+						if cat == 'purrr' || cat == 'meow'
+							'Hi kitty!'
+						end
+						```
+						#### &&
+						```
+						dog = 'woof'
+						cat = 'purrr'
+						
+						if cat == 'purrr' && dog == 'woof'
+							'Too many animals!'
+						end
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Combining conditionals and comparisons (example 3):
 						```
 						puts 'Hello, what\'s your name?'
 						name = gets.chomp
