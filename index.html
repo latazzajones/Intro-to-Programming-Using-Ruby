@@ -736,7 +736,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						### Combining conditionals and comparisons (example 2):
-						#### ||
+						#### Using   ||
 						```
 						cat = 'purrr'
 
@@ -744,7 +744,7 @@
 							'Hi kitty!'
 						end
 						```
-						#### &&
+						#### Using   &&
 						```
 						dog = 'woof'
 						cat = 'purrr'
@@ -776,9 +776,36 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Hai, I'm a loop!
+						### `while` & `break`
+						```
+						while true
+							puts 'What would you like to ask C to do?'
+							request = gets.chomp
+							
+							puts 'You say, "C, please ' + request + '"'
+							puts 'C\'s response:'
+							puts '"C ' + request + '."'
+							puts '"Papa ' + request + ', too."'
+							puts '"Mama ' + request + ', too."'
+							puts '"Ruby ' + request + ', too."'
+							puts '"Nono ' + request + ', too."'
+							puts '"Emma ' + request + ', too."'
+							puts
+							
+							if request == 'stop'
+								break
+							end
+						end
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Work time!
 						### Start `Deaf Grandma` and `99 Bottles of Beer` in Chris Pine 7.5
-						#### Save them as separate files and commit your work frequently!
+						#### Save them as separate files in your `/Development` directory and commit your work frequently!
 					</script>
 				</section>
 
@@ -801,6 +828,149 @@
 						## Homework Review
 						- Time to push what we committed last week!
 						- We'll set up a new repository together!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Making a new repo on GitHub
+						- Go to your GitHub account
+						- Click on the `Repositories` tab
+						- Click the `new` button
+						- Name your repository -- generally the same name as the directory that has your files.
+						- Follow the instructions to create a new repository from the command line.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## `git push origin master`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## What happened on GitHub?
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: define an array & enumerables
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: give an example & deconstruct this data type
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: play with it in irb for 5 minutes
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: methods on arrays
+						- `.first` and `.last`
+						- `.include?` and `.any?`
+						- `.push` and `.pop` (anyone remember git push??!??!)
+						- `.shuffle`
+						- `.shift`
+						- `.slice`
+						- `.uniq`
+						- `.flatten`
+						- `.zip`
+						*Check out the <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby docs</a> on Arrays!*
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: define iterators (in the context of loop through enumerables)
+
+						- unique syntax in ruby for iterators called BLOCK SYNTAX
+						- use an example of `each` to show what blocks look like
+						- show the do block and the inline { } block syntax
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: another enumerable example using `times` block
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: maybe `.collect` if we can come up with a simple example)
+
+						* show enumerable docs? (careful, they also include hashes.)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: WE will come up with good array example program that we'll write together
+						- you guys drive, we'll type.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: WORK TIME -- we will come up with a sample example for them to do on their own using arrays + iterators
+						- do this twice:
+						**commit + push**
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: introduce hashes
+						## talk about how arrays are indexed and the order of things really matters
+						## explain keys and values and how order doesnt matter in context of hash
+						## think about why a hash might be a more appropriate data structure to use than an array
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: example with hashes
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: play in irb with hashes, take a look at the enumerable docs again.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: take a look at all the resources available to you!
+						*Chris Pine gets a little complex, but read through it even if you can't do all the exercises*
+						## other resources:
+						- ruby monk
+						- codeacademy ruby
+						- ruby docs
+						- blogs! tutorials!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						todo: next steps
+						- hack nights
+						- bmore on rails talks
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## THANK YOU! It's been fun.
 					</script>
 				</section>
 
