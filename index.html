@@ -188,7 +188,9 @@
 						puts 2.0 * 3.0
 						puts 5.0 - 8.0
 						puts 9.0 / 2.0
+						puts 10 % 3
 						```
+						(What is `%` doing? This is called a **modulo**)
 					</script>
 				</section>
 
@@ -620,7 +622,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						##Time to work on `Angry Boss`!! 
+						##Time to work on `Angry Boss`!!
 						###(Chris Pine 6.2)
 					</script>
 				</section>
@@ -709,7 +711,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Conditionals
-						#### logical statements based on how comparisons evaluate 
+						#### logical statements based on how comparisons evaluate
 						 - `if`
 						 - `else`
 						 - `elsif`
@@ -748,7 +750,7 @@
 						```
 						dog = 'woof'
 						cat = 'purrr'
-						
+
 						if cat == 'purrr' && dog == 'woof'
 							'Too many animals!'
 						end
@@ -764,7 +766,7 @@
 						name = gets.chomp
 
 						puts 'Hello, ' + name + '.'
-						
+
 						if name == 'Chris'
 							'What a lovely name!'
 						elsif name == 'Katy'
@@ -782,7 +784,7 @@
 						while true
 							puts 'What would you like to ask C to do?'
 							request = gets.chomp
-							
+
 							puts 'You say, "C, please ' + request + '"'
 							puts 'C\'s response:'
 							puts '"C ' + request + '."'
@@ -792,7 +794,7 @@
 							puts '"Nono ' + request + ', too."'
 							puts '"Emma ' + request + ', too."'
 							puts
-							
+
 							if request == 'stop'
 								break
 							end
@@ -856,74 +858,207 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: define an array & enumerables
+						##You're watching the world cup!
+						<img src="http://img1.nymag.com/imgs/daily/intelligencer/2014/07/13/celebration-on-offsides-goal.w529.h352.2x.gif">
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: give an example & deconstruct this data type
+						##How can you store a list of the winning teams?
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: play with it in irb for 5 minutes
+						###What if there was a way to keep a bunch of object together in the same place?
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: methods on arrays
-						- `.first` and `.last`
-						- `.include?` and `.any?`
-						- `.push` and `.pop` (anyone remember git push??!??!)
+						#ARRAYS
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##An array
+						###is a way of storing a list of objects in a particular order.
+						`['Germany', 'Argentina', 'Belgium', 'Colombia']`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##An array
+						* is a data structure.
+						* You can assign it to a variable.
+
+						```
+						bmore_brewers = ['Public Works', 'Union Brewery', 'Brewers Art']
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						###You can put ANY object into an array.
+
+						```
+						random_array = [0.3, "Q", 7, "cats are cute but annoying"]
+
+						any_data_structure = [2, [], "hot sauce!", [1, 2, 3]]
+
+						nothing_is_something = [nil, nil]
+
+						```
+						(Data structures are objects, too!)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Order matters
+						* every object in an array has a location
+						* we call an object's location in an array its **index**
+						* an object knows it's index
+						* an index knows which object is located there.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<img src="assets/array.png">
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Using the index
+						```
+						random_array = [0.3, "Q", 7, "cats are cute but annoying"]
+
+						random_array[1]
+						randome_array.index("cats are cute but annoying")
+						```
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+						##Some methods to use on arrays
+						- `.first`
+						- `.last`
+						- `.include?`
+						- `.push` (remember git push?)
+						- `.pop`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Play in irb and try to figure out what these methods do
 						- `.shuffle`
 						- `.shift`
 						- `.slice`
 						- `.uniq`
 						- `.flatten`
+
+						Check out the <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby docs</a> on Arrays!*
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##iterators
+						* methods that allows you to do something to every item in a list
+						* have a special **block syntax**
+
+						```
+						random_array = [0.3, "Q", 7, "cats are cute but annoying"]
+
+						random_array.each do |item|
+							puts item
+						end
+						```
+						```
+						random_array.each_with_index do |item, index|
+							index + ". " + item
+						end
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						##Inline syntax for blocks
+
+						```
+						random_array = [0.3, "Q", 7, "cats are cute but annoying"]
+
+						random_array.each { |item| puts item }
+						```
+						```
+						random_array.each_with_index { |item, i| i + ". " + item }
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						###Read about these other iterators in the <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html">Ruby docs</a>
+						- `.collect`
+						- `.any`
 						- `.zip`
-						*Check out the <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby docs</a> on Arrays!*
+						- `.partition`
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: define iterators (in the context of loop through enumerables)
+						##Let's pair: you drive, we'll type.
+						###Your task:
 
-						- unique syntax in ruby for iterators called BLOCK SYNTAX
-						- use an example of `each` to show what blocks look like
-						- show the do block and the inline { } block syntax
+						1. Let's build an array with everyone's favorite season
+						1. First return the seasons in alphabetial order.
+						1. Then return each season only once, alphabatized, as an ordered list.
+
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: another enumerable example using `times` block
+						##With a partner pair on FizzBuzz.
+
+						* Print every number between 1-100
+							* if the number is divisible by 3, print "Fizz"
+							* if the number is divisible by 5, print "Buzz"
+							* if the number is divizible by 3 AND 5, print "FizzBuzz"
+
+						(You will need to use an operation we learned on Day 1)
+
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: maybe `.collect` if we can come up with a simple example)
+						##Restaurant order
 
-						* show enumerable docs? (careful, they also include hashes.)
-					</script>
-				</section>
+						* Write a program that asks for each item you would like to order at a restaurant.
+							* After each item, the program should as for the next item until the
+						order is complete.
+							* Be creative and try to use what we've learned.
+							* At the very least, your program should return an array of the items that were ordered.
 
-				<section data-markdown>
-					<script type="text/template">
-						todo: WE will come up with good array example program that we'll write together
-						- you guys drive, we'll type.
-					</script>
-				</section>
+						* Some Ideas:
+							1. Use an if statement
+							1. Use a block
+							1. Use an iterator
 
-				<section data-markdown>
-					<script type="text/template">
-						todo: WORK TIME -- we will come up with a sample example for them to do on their own using arrays + iterators
-						- do this twice:
-						**commit + push**
+						**Be sure to commit at least 3 times and push to your repository.**
+
 					</script>
 				</section>
 
@@ -950,29 +1085,45 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: take a look at all the resources available to you!
-						*Chris Pine gets a little complex, but read through it even if you can't do all the exercises*
-						## other resources:
-						- ruby monk
-						- codeacademy ruby
-						- ruby docs
-						- blogs! tutorials!
+						## Resources:
+						* <a href="https://rubymonk.com/">Ruby Monk</a>
+						* Code Academy's <a href="http://www.codecademy.com/tracks/ruby">Ruby Track</a>
+						* <a href="http://ruby-doc.org/">Ruby Docs</a>
+						* Blogs! Tutorials!
+
+						(*Chris Pine gets a little complex, but read through it even if you can't do all the exercises*)
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						todo: next steps
-						- hack nights
-						- bmore on rails talks
+						## Next Steps
+						* <a href="http://www.bmoreonrails.org">B'more on Rails</a>
+							* hack nights
+							* tech talks
+						* Keep reading
+						* Keep coding
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## THANK YOU! It's been fun.
+						## THANK YOU!
+						##It's been fun.
 					</script>
 				</section>
+
+
+
+
+
+
+
+
+
+
+
+				
 
 <!-- REFERENCE SLIDES -->
 
