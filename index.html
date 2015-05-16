@@ -397,26 +397,26 @@
 				<section data-markdown>
 					<script type="text/template">
 						## More command line commands
-						- `mkdir`
-						- `touch`
-						- `rm`
-						- `rm -rf`
-						- `grep pattern filename(s)`
+						- <span class="fragment">`mkdir`</span>
+						- <span class="fragment">`touch`</span>
+						- <span class="fragment">`rm`</span>
+						- <span class="fragment">`rm -rf`</span>
+						- <span class="fragment">`grep pattern filename(s)`</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Make a new file in our Development folder
-						#### Create and open a file called `variables.rb`
+						## Make a new file in our `Development` folder
+						#### <span class="fragment">Create and open a file called `variables.rb`</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						### Let's write some strings!
-						#### Write a program that `puts` this phrase `20` times:
-						`I saw Susie sitting in a shoe shine shop. Where she sits she shines, and where she shines she sits.`
+						#### <span class="fragment">Write a program that `puts` this phrase `20` times:</span>
+						<span class="fragment">`I saw Susie sitting in a shoe shine shop. Where she sits she shines, and where she shines she sits.`</span>
 					</script>
 				</section>
 
@@ -431,19 +431,17 @@
 				<section data-markdown>
 					<script type="text/template">
 						##And there is!
-						- *Variables*: references, pointers, labels to things!
-						- Those things are generally *data*, and in Ruby, most data is an object.
+						- <span class="fragment">*Variables*: references, pointers, labels to things!</span>
+						- <span class="fragment">Those things are generally *data*, and in Ruby, most data is an object.</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Let's define some variables in the console
-						### In your terminal, type `irb`
-						### `irb` stands for "Interactive Ruby Shell"
-						### `irb` is your playground!
-
-						##*Ask Angelique how to open irb in windows*
+						### <span class="fragment">In your terminal, type `irb`</span>
+						### <span class="fragment">`irb` stands for "Interactive Ruby Shell"</span>
+						### <span class="fragment">`irb` is your playground!</span>
 					</script>
 				</section>
 
@@ -456,7 +454,9 @@
 						> x = 3
 						> y = 5
 						```
-						what can you do with variables?
+						<span class="fragment">
+							What can you do with variables?
+						</span>
 						```
 						> t
 						# => "Tasha"
@@ -471,14 +471,14 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Use a variable to make your program run
-						### Try to do it in as few lines as possible
-						#### Hint: you'll need to use some tools from last week!
+						### <span class="fragment">Try to do it in as few lines as possible</span>
+						#### <span class="fragment">Hint: you'll need to use some tools from last week!</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						##The only solution I could come up with.
+						##Solutions?
 
 						```
 						susie = "I saw Susie sitting in a shoe shine shop. Where she sits she shines,
@@ -486,6 +486,7 @@
 
 						susie * 20
 						```
+						<span class="fragment">or</span>
 						```
 						susie = "I saw Susie sitting in a shoe shine shop. Where she sits she shines,
 						and where she shines she sits. "
@@ -498,7 +499,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Methods
-						### How we send actions
+						### <span class="fragment">How we send actions</span>
 					</script>
 				</section>
 
@@ -518,33 +519,32 @@
 					<script type="text/template">
 						##What methods have we learned?
 
-						###`+ = - / *`
+						###<span class="fragment">`+ = - / * %`</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						##Some *really* useful methods
-						```
-						puts (implicit reciever for self)
-						gets
-						gets.chomp
-						rand
-						.to_s
-						.to_i
-						.length
-						.reverse
-						.upcase
-						.downcase
-						.capitalize
-						.swapcase
-						```
+						- <span class="fragment">`puts (implicit reciever for self)`</span>
+						- <span class="fragment">`gets`</span>
+						- <span class="fragment">`gets.chomp`</span>
+						- <span class="fragment">`rand`</span>
+						- <span class="fragment">`.to_s`</span>
+						- <span class="fragment">`.to_i`</span>
+						- <span class="fragment">`.length`</span>
+						- <span class="fragment">`.reverse`</span>
+						- <span class="fragment">`.upcase`</span>
+						- <span class="fragment">`.downcase`</span>
+						- <span class="fragment">`.capitalize`</span>
+						- <span class="fragment">`.swapcase`</span>
 						</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						##Lets write a program. Create a new file and add this to it.
+						##Lets write a program.
+						###<span class="fragment">Create a new file and add this:</span>
 						```
 						puts "Tell me your name!"
 						name = gets
@@ -563,15 +563,15 @@
 				<section data-markdown>
 					<script type="text/template">
 						##Now for some social networking/version control.
-						<a href="https://github.com/">GitHub</a>
+						###<span class="fragment"><a href="https://github.com/">GitHub</a></span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Homework:
-						- Create GitHub account
-						- Exercise 5.6 on page 28 (you'll need to use variables + methods!)
+						- <span class="fragment">Create GitHub account</span>
+						- <span class="fragment">Exercise 5.6 on page 28 (you'll need to use variables + methods!)</span>
 					</script>
 				</section>
 
@@ -584,30 +584,31 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Review the Homework!
-						 - How did you write the `full name greeting` program?
-						 - There's more than one way to do something!
+						 - <span class="fragment">How did you write the `full name greeting` program?</span>
+						 - <span class="fragment">There's more than one way to do something!</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Time to git our git on
-						- Version control
-						- Locally-hidden files prepended with `.git`
-						- Do you have git? (`git --version`)
+						- <span class="fragment">Version control</span>
+						- <span class="fragment">Locally-hidden files prepended with `.git`</span>
+						- <span class="fragment">Do you have git? (`git --version`)
 							* Install from <a href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a>.
+						</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Using git locally
-						- `git init`
-						- `git status`
-						- `git add --all`
-						- `git commit -m`
-						- `git branch`
-						- `git log`
+						- <span class="fragment">`git init`</span>
+						- <span class="fragment">`git status`</span>
+						- <span class="fragment">`git add --all`</span>
+						- <span class="fragment">`git commit -m`</span>
+						- <span class="fragment">`git branch`</span>
+						- <span class="fragment">`git log`</span>
 					</script>
 				</section>
 
@@ -620,7 +621,7 @@
 						git add --all
 						git commit -m "first commit! yay!"
 						```
-						###Let's check our log:
+						###<span class="fragment">Let's check our log:</span>
 						```
 						git log
 						```
@@ -637,55 +638,55 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Let's commit `Angry Boss` !
-						#### ...do you remember how?
-						<!-- link back to the slide that explains how -->
+						#### <span class="fragment">...do you remember how?</span>
+						<span class="fragment"><a href="#/52">Here's a hint</a></span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Flow control
-						 - How we handle logic in our code.
-						 - **Comparisons** & **conditionals** (aka "branching")
+						 - <span class="fragment">How we handle logic in our code.</span>
+						 - <span class="fragment">**Comparisons** & **conditionals** (aka "branching")</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Comparisons
-						#### comparing one object to another
-						 - `<`
-						 - `>`
-						 - `>=`
-						 - `<=`
-						 - `==`
-						 - `!=` (not equals to)
+						#### <span class="fragment">comparing one object to another</span>
+						 - <span class="fragment">`<`</span>
+						 - <span class="fragment">`>`</span>
+						 - <span class="fragment">`>=`</span>
+						 - <span class="fragment">`<=`</span>
+						 - <span class="fragment">`==`</span>
+						 - <span class="fragment">`!=` (not equals to)</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Nothingness
-						#### Everything in Ruby is an object.
-						#### Objects are inherently "truthy" values, because they exist.
-						#### ...but what about the *absence* of an object?
-						## `nil`
+						#### <span class="fragment">Everything in Ruby is an object.</span>
+						#### <span class="fragment">Objects are inherently "truthy" values, because they exist.</span>
+						#### <span class="fragment">...but what about the *absence* of an object?</span>
+						## <span class="fragment">`nil`</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## `nil` is nothing
-						- Evaluates to neither `true` nor `false`
-						- Nil is *not* a truthy value -- it's falsey (it doesn't exist)
-						- The **only** other falsey value in Ruby is `false`.
+						## <span class="fragment">`nil` is nothing<span>
+						- <span class="fragment">Evaluates to neither `true` nor `false`</span>
+						- <span class="fragment">Nil is *not* a truthy value -- it's falsey (it doesn't exist)</span>
+						- <span class="fragment">The **only** other falsey value in Ruby is `false`.</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Comparisons
-						### let's play in irb:
+						### <span class="fragment">let's play in irb:</span>
 						 ```
 						 > 1 > 2
 						 # => false
@@ -702,29 +703,28 @@
 				<section data-markdown>
 					<script type="text/template">
 						## What about `true` and `false`?
-						### What are they?
+						### <span class="fragment">What are they?</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## `true` and `false`
-						 are objects & data structures!
-
-						 We call them  `booleans`
+						##`true` and `false`
+						### <span class="fragment">are objects & data structures!</span>
+						###<span class="fragment">We call them  `booleans`</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Conditionals
-						#### logical statements based on how comparisons evaluate
-						 - `if`
-						 - `else`
-						 - `elsif`
-						 - `end`
-						 - `&&`
-						 - `||`
+						#### <span class="fragment">logical statements based on how comparisons evaluate</span>
+						 - <span class="fragment">`if`</span>
+						 - <span class="fragment">`else`</span>
+						 - <span class="fragment">`elsif`</span>
+						 - <span class="fragment">`end`</span>
+						 - <span class="fragment">`&&`</span>
+						 - <span class="fragment">`||`</span>
 					</script>
 				</section>
 
@@ -738,14 +738,14 @@
 							"dawg"
 						end
 						```
-						##### *(uses implicit returns)*
+						##### <span class="fragment">*(uses implicit returns)*</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						### Combining conditionals and comparisons (example 2):
-						#### Using   ||
+						#### <span class="fragment">Using   ||</span>
 						```
 						cat = 'purrr'
 
@@ -753,7 +753,7 @@
 							'Hi kitty!'
 						end
 						```
-						#### Using   &&
+						#### <span class="fragment">Using   &&</span>
 						```
 						dog = 'woof'
 						cat = 'purrr'
@@ -786,7 +786,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Hai, I'm a loop!
-						### `while` & `break`
+						### <span class="fragment">`while` & `break`</span>
 						```
 						while true
 							puts 'What would you like to ask C to do?'
@@ -813,17 +813,17 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Work time!
-						### Start `Deaf Grandma` and `99 Bottles of Beer` in Chris Pine 7.5
-						#### Save them as separate files in your `/Development` directory and commit your work frequently!
+						### <span class="fragment">Start `Deaf Grandma` and `99 Bottles of Beer` in Chris Pine 7.5</span>
+						<span class="fragment">Save them as separate files in your `/Development` directory and commit your work frequently!</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Homework
-						- Finish both exercises
-						- Use version control and **commit, commit, commit**!
-						- Check out Ruby Monk over <a href="http://rubymonk.com">here</a>.
+						- <span class="fragment">Finish both exercises</span>
+						- <span class="fragment">Use version control and **commit, commit, commit**!</span>
+						- <span class="fragment">Check out Ruby Monk over <a href="http://rubymonk.com">here</a>.</span>
 					</script>
 				</section>
 
@@ -835,8 +835,8 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Homework Review
-						- Time to push what we committed last week!
-						- We'll set up a new repository together!
+						- <span class="fragment">Time to push what we committed last week!</span>
+						- <span class="fragment">We'll set up a new repository together!</span>
 					</script>
 				</section>
 
