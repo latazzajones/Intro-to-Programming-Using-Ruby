@@ -170,7 +170,7 @@
 				<!-- install sublime text -->
 				<section>
 					<h2>Get Yo Sublime On</h2>
-					<a href="http://www.sublimetext.com/">Sublime Text</a> or <a href="https://atom.io/">Atom</a><br>
+					<a href="http://www.sublimetext.com/">Sublime Text</a>
 					<p>Text editors are where our ruby files live!</p>
 				</section>
 
@@ -432,7 +432,7 @@
 					<script type="text/template">
 						##And there is!
 						- <span class="fragment">*Variables*: references, pointers, labels to things!</span>
-						- <span class="fragment">Those things are generally *data*, and in Ruby, most data is an object.</span>
+						- <span class="fragment">Those things are generally *data*, and in Ruby, all data are objects.</span>
 					</script>
 				</section>
 
@@ -710,7 +710,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						##`true` and `false`
-						### <span class="fragment">are objects & data structures!</span>
+						### <span class="fragment">are objects & data types!</span>
 						###<span class="fragment">We call them  `booleans`</span>
 					</script>
 				</section>
@@ -878,7 +878,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						###What if there was a way to keep a bunch of object together in the same place?
+						###What if there was a way to keep a bunch of objects together in the same place?
 					</script>
 				</section>
 
@@ -927,16 +927,17 @@
 				<section data-markdown>
 					<script type="text/template">
 						##Order matters
-						* <span class="fragment">every object in an array has a location</span>
-						* <span class="fragment">we call an object's location in an array its **index**</span>
-						* <span class="fragment">an object knows it's index</span>
-						* <span class="fragment">an index knows which object is located there.</span>
+						* <span class="fragment">Every object in an array has a location</span>
+						* <span class="fragment">We call an object's location in an array its **index**</span>
+						* <span class="fragment">An object knows its index</span>
+						* <span class="fragment">An index knows which object is located there.</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						<img src="assets/array.png">
+						<span class="fragment">Ruby arrays are zero indexed!</span>
 					</script>
 				</section>
 
@@ -1040,9 +1041,9 @@
 						##With a partner pair on FizzBuzz.
 
 						* <span class="fragment">Print every number between 1-100</span>
-							* <span class="fragment">if the number is divisible by 3, print "Fizz"</span>
-							* <span class="fragment">if the number is divisible by 5, print "Buzz"</span>
-							* <span class="fragment">if the number is divizible by 3 AND 5, print "FizzBuzz"</span>
+							* <span class="fragment">if the number is divisible by 3, print `Fizz`</span>
+							* <span class="fragment">if the number is divisible by 5, print `Buzz`</span>
+							* <span class="fragment">if the number is divizible by 3 AND 5, print `FizzBuzz`</span>
 
 						<span class="fragment">(You will need to use an operation we learned on Day 1)</span>
 
@@ -1054,7 +1055,7 @@
 						##Restaurant order
 
 						* <span class="fragment">Write a program that asks for each item you would like to order at a restaurant.</span>
-							* <span class="fragment">After each item, the program should as for the next item until the order is complete.</span>
+							* <span class="fragment">After each item, the program should ask for the next item until the order is complete.</span>
 							* <span class="fragment">Be creative and try to use what we've learned.</span>
 							* <span class="fragment">At the very least, your program should return an array of the items that were ordered.</span>
 
