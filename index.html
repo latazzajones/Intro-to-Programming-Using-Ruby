@@ -41,7 +41,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Intro to Programming</h1>
+					<h2>Intro to Programming</h1>
 					<h2>Using Ruby</h2>
 					<p>
 						<p>Created by</p>
@@ -49,6 +49,7 @@
 						<small>//</small>
 						<small> Natasha Jones <a href="http://twitter.com/latazzajones">@latazzajones</a></small>
 					</p>
+					<a href="#/1">Day 1</a> // <a href="#/28">Day 2</a> // <a href="#/48">Day 3</a> // <a href="#/69">Day 4</a>
 				</section>
 
 				<!-- Slide 1 = we introduce ourselves and how we got into programming -->
@@ -205,10 +206,10 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Time To Run Our Program!
-						- Open your command line
-						- Type: `pwd`
-						- If you are not in your `/Desktop` directory, `cd` into it
-						- Run this command:
+						- <span class="fragment">Open your command line</span>
+						- <span class="fragment">Type: `pwd`
+						- <span class="fragment">If you are not in your `/Desktop` directory, `cd` into it
+						- <span class="fragment">Run this command:
 						```
 						ruby calc.rb
 						```
@@ -240,53 +241,56 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Strings vs. Numbers
-						- *Numbers*: integer or a float
-						- *Strings*: characters, words, sentences. Basically, anything can be a string if it's within `"` or `'` quotes
-
+						- <span class="fragment">*Numbers*: integer or a float</span>
+						- <span class="fragment">*Strings*: characters, words, sentences. Basically, anything can be a string if it's within `"` or `'` quotes</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Escaping characters in strings
-						`puts 'Hello, what\'s your name?'`
+						### The backslash: `\`
+						<span class="fragment">`puts 'Hello, what\'s your name?'`</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Different data types do not play well together
-						- this will break
-						```
-						'dog' + 5
-						```
-						- this will **not** break
-						```
-						'dog' + '5'
-						```
-						- and neither will this
-						```
-						'dog' + 5.to_s
-						```
+						- <span class="fragment">This will break
+							```
+							'dog' + 5
+							```
+						</span>
+						- <span class="fragment">This will **not** break
+							```
+							'dog' + '5'
+							```
+						</span>
+						- <span class="fragment">And neither will this
+							```
+							'dog' + 5.to_s
+							```
+						</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## `to_s`
-						### is a method.
-						### Don't worry about it.
+						### <span class="fragment">is a method.</span>
+						### <span class="fragment">Don't worry about it.</span>
 
-						## But it does **DO** something.
+						## <span class="fragment">But it does **DO** something.</span>
 
-						#### What do you think it does?
+						#### <span class="fragment">What do you think it does?</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Let's write our program:
-						- Open your `calc.rb` file and type:
+						- <span class="fragment">Open your `calc.rb` file and type:
 						```
 						puts "cat" + 2
 						puts "3"
@@ -295,15 +299,14 @@
 						puts "programming" * 3
 						puts "9.0 / 2.0"
 						```
+						</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Run Our Program!
-						```
-						ruby calc.rb
-						```
+						###<span class="fragment">`ruby calc.rb`</span>
 					</script>
 				</section>
 
@@ -322,36 +325,38 @@
 						programming
 						9.0 / 2.0
 						```
-						but maybe you got something more like this?
-						```
-						#<TypeError: no implicit conversion of Fixnum into String>
-						```
+						###<span class="fragment">maybe you got something more like this..?</span>
+						<br>
+						<span class="fragment">
+						`#<TypeError: no implicit conversion of Fixnum into String>`
+						</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Your first bug. Welcome to code.
+						## Your first bug. 
+						## Welcome to code.
 
-						- Figure out why this error might happen:
-
+						- <span class="fragment">Figure out why this error might happen:
 						```
 						<TypeError: no implicit conversion of Fixnum into String>
 						```
-						- Fix it in your code -- there's more than one way!
+						</span>
+						- <span class="fragment">Fix it in your code -- there's more than one way!</span>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						## Review
-						- Set up + install.
-						- Introduced the command line.
-						- Created + ran our first program.
-						- Learned about numbers + operations.
-						- Learned about strings.
-						- And data types.
-						- AND a method!
+						- <span class="fragment">Set up + install.</span>
+						- <span class="fragment">Introduced the command line.</span>
+						- <span class="fragment">Created + ran our first program.</span>
+						- <span class="fragment">Learned about numbers + operations.</span>
+						- <span class="fragment">Learned about strings.</span>
+						- <span class="fragment">And data types.</span>
+						- <span class="fragment">AND a method!</span>
 					</script>
 				</section>
 
@@ -360,15 +365,18 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Homework
-						1. Teach yourself about the `mkdir` command:
+						1. <span class="fragment">Teach yourself about the `mkdir` command:
 							- Try to create your own folder on your desktop called `Development`(if this is challenging - do it from your GUI)
 							- Create a file in that folder called `numbers_and_letters.rb`
 							- Do the rest of your homework in that file!
-						2. Do Section 2.5 in Learn to Program (pdf)
-						3. Use some strings to elaborate on your program and create more complete answers from 2.5:
+						</span>
+						2. <span class="fragment">Do Section 2.5 in Learn to Program (pdf)
+						</span>
+						3. <span class="fragment">Use some strings to elaborate on your program and create more complete answers from 2.5:
 							```
 							"There are " + 24.to_s + " hours in a day."
 							```
+						</span>
 					</script>
 				</section>
 
@@ -376,7 +384,7 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					Day 2
+					## Day 2
 				</script>
 			</section>
 
