@@ -49,9 +49,9 @@
 * Keep reading this book (warning .. but come on Satruday or to hack night)
 
 ## Blogs, Books, Podcasts:
-* Subscribe to <a href="http://rubyweekly.com/">Ruby Weekly</a>!
-* Literally, the best book on Ruby: <a href="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657>The Well-Grounded Rubyist</a>. It's totally worth buying (and reading again, and again, and again!).
 * Vaidehi's <a href="http://vaidehijoshi.github.io/">Technical Blog</a> (she posts every Tuesday)!
+* Subscribe to <a href="http://rubyweekly.com/">Ruby Weekly</a>!
+* <a href="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657>The Well-Grounded Rubyist</a>;  Best book on Ruby, totally worth buying (and reading again, and again, and again!).
 * CodeAcademy's <a href="http://www.codecademy.com/en/tracks/ruby">Ruby track</a>
 * Ruby in <a href="http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html">100 Minutes</a>
 * Ruby Monk's <a href="https://rubymonk.com/learning/books/1-ruby-primer">Ruby Primer</a>
