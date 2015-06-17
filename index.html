@@ -551,8 +551,6 @@
 						- <span class="fragment">`puts (implicit reciever for self)`</span>
 						- <span class="fragment">`gets`</span>
 						- <span class="fragment">`gets.chomp`</span>
-						- <span class="fragment">`rand`</span>
-						- <span class="fragment">`.to_s`</span>
 						- <span class="fragment">`.to_i`</span>
 						- <span class="fragment">`.length`</span>
 						- <span class="fragment">`.reverse`</span>
@@ -560,6 +558,9 @@
 						- <span class="fragment">`.downcase`</span>
 						- <span class="fragment">`.capitalize`</span>
 						- <span class="fragment">`.swapcase`</span>
+						- also:
+						- <span class="fragment">`rand`</span>
+						- <span class="fragment">`.to_s`</span>
 						</script>
 				</section>
 
@@ -581,6 +582,19 @@
 						</script>
 				</section>
 
+				<section data-markdown>
+					<script type="text/template">
+						## Name transformer machine
+						- Write a program that uses each of the String methods we just learned.
+						- Your program will be a machine that takes an input (your name) and transforms it using a method
+						```ruby
+						puts "tell me your name!"
+						name = gets
+						puts "Your name in upcase: " + name.upcase
+						```
+						- Part 2 of this assignment: Number transformer machine (use the docs!)
+						</script>
+				</section>
 
 				<section data-markdown>
 					<script type="text/template">
